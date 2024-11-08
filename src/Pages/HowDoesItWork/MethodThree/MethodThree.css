@@ -1,0 +1,165 @@
+.method-three {
+  width: 100%; /* Full width for the section */
+  min-height: 55vh; /* Minimum height set to 55% of viewport height */
+  margin-top: 50px; /* Space above the section */
+  margin-bottom: 30px; /* Space below the section */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  color: white; /* Text color */
+  background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url("../../../assets/metodoinversion.png"); /* Background image with gradient overlay */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  gap: 100px; /* Space between flex items */
+}
+
+.method-three-text {
+  margin-top: -10px; /* Adjusts the position of the text */
+  text-align: justify; /* Justifies text for even edges */
+}
+
+.method-three-text p {
+  width: 600px; /* Max width for paragraph for better readability */
+  font-weight: 200; /* Light font weight for text */
+}
+
+.method-three-text h1 {
+  margin-bottom: 20px; /* Space below the heading */
+  color: #d39000; /* Heading color */
+  font-family: "Lora", serif; /* Font family for heading */
+  font-size: 40px; /* Font size for heading */
+  font-weight: 600; /* Bold font weight for heading */
+}
+
+.method-three-video video {
+  margin-top: 10px; /* Space above the video */
+  border-radius: 20px; /* Rounded corners for the video */
+}
+
+/* ----------------------------------------------------------------- */
+
+.method-three-title{
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #d39000 0%,
+    #d8b726 29%,
+    #fae84b 67%,
+    #f37610 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+  .method-three {
+      margin-top: 20px; /* Reduced margin for mobile */
+      margin-bottom: 30px; /* Bottom margin for mobile */
+      padding: 20px; /* Adds padding on mobile */
+      align-items: center; /* Center items */
+      justify-content: center; /* Center items horizontally */
+      flex-direction: column; /* Stack items vertically */
+      gap: 20px; /* Reduced gap for mobile */
+  }
+  .method-three-text {
+      text-align: center; /* Center text on mobile */
+  }
+  .method-three-text p {
+      width: 100%; /* Full width text for mobile */
+      text-align: justify; /* Justifies text for readability */
+      text-align-last: center; /* Center the last line */
+      font-size: 14px; /* Smaller font size for mobile */
+  }
+  .method-three-text h1 {
+      margin-top: 15px; /* Adjusted margin for mobile */
+      font-size: 28px; /* Smaller font size for heading on mobile */
+  }
+  .method-three-video video {
+      width: 100%; /* Full width video on mobile */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 25px; /* Space below the video on mobile */
+  }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+  .method-three {
+      padding: 25px; /* Padding for tablet screens */
+      align-items: center; /* Center items vertically */
+      justify-content: center; /* Center items horizontally */
+      flex-direction: column; /* Stack items vertically */
+      gap: 40px; /* Increased gap for tablet screens */
+  }
+  .method-three-text {
+      text-align: center; /* Center text alignment on tablet */
+  }
+  .method-three-text p {
+      width: 100%; /* Full width text for tablet */
+      text-align: justify; /* Justifies text */
+      text-align-last: center; /* Center the last line */
+      font-size: 15px; /* Slightly larger font size for readability */
+  }
+  .method-three-text h1 {
+      margin-top: 25px; /* Margin above heading */
+      font-size: 40px; /* Larger font size for heading */
+  }
+  .method-three-video video {
+      width: 100%; /* Full width for video */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Margin below video */
+  }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1023px) and (max-width: 1280px) {
+  .method-three {
+      padding: 20px; /* Padding adjustments for PC */
+      gap: 50px; /* Space between items */
+  }
+  .method-three-text p {
+      width: 500px; /* Reduced width for paragraphs */
+      font-size: 15px; /* Font size adjustment */
+  }
+  .method-three-text h1 {
+      font-size: 36px; /* Reduced heading size */
+  }
+  .method-three-video video {
+      width: 400px; /* Video size adjustment */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1439px) and (max-width: 1920px) {
+  .method-three {
+      gap: 80px; /* Increased gap for larger screens */
+      padding: 30px; /* Padding for larger screens */
+  }
+  .method-three-text p {
+      width: 700px; /* Increased width for text */
+      font-size: 18px; /* Larger font size for readability */
+  }
+  .method-three-text h1 {
+      font-size: 48px; /* Increased heading size */
+  }
+  .method-three-video video {
+      width: 450px; /* Video size adjustment */
+      height: auto; /* Maintain aspect ratio */
+  }
+}

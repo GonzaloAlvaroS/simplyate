@@ -1,0 +1,150 @@
+/* Main container for the "values" section with full width and auto height */
+.values {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  background-color: rgb(22, 22, 22); /* Dark background color */
+  color: white; /* White text color */
+}
+
+/* Centered text container within the "values" section */
+.values-text {
+  display: block;
+  text-align: center;
+  padding-top: 25px; /* Top padding */
+}
+
+/* Main heading style for values section */
+.values-text h1 {
+  font-family: "Inria Serif", serif; /* Serif font family */
+}
+
+/* Subheading style with custom color and font */
+.values-text h2 {
+  color: #d39000; /* Highlighted color */
+  font-family: "Lora", serif;
+  font-size: 18px;
+}
+
+/* Flex container for images, centered horizontally */
+.values-all-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* First image container with right margin */
+.values-images1 {
+  display: block;
+  margin-right: 170px; /* Space between the images */
+}
+
+/* Second image container */
+.values-images2 {
+  display: block;
+}
+
+/* Centered container for block elements with vertical alignment */
+.values-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* Adds spacing above the button within the block */
+.values-block button {
+  margin-top: 25px;
+}
+
+/* Hover effect for images with scaling and smooth transition */
+.values-block img:hover {
+  transform: scale(1.1); /* Image zoom on hover */
+  transition: 0.5s; /* Smooth transition duration */
+}
+
+/* Image styles for both values-images containers */
+.values-images1 img, .values-images2 img {
+  width: 400px;
+  height: 250px;
+  border-radius: 30px; /* Rounded corners */
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+  .values {
+      min-height: auto;
+      padding: 20px; /* Padding for mobile layout */
+  }
+  .values-text h1 {
+      font-size: 24px; /* Smaller font size for mobile */
+  }
+  .values-text h2 {
+      margin-bottom: 10px;
+      font-size: 16px; /* Reduced font size for smaller screens */
+  }
+  .values-all-images {
+      flex-direction: column; /* Stack images vertically on mobile */
+  }
+  .values-images1, .values-images2 {
+      margin-right: 0;
+      margin-left: 0; /* Remove margins for mobile */
+  }
+  .values-images1 img, .values-images2 img {
+      width: 100%; /* Full-width images on mobile */
+      max-width: 320px;
+      height: auto;
+      border-radius: 20px; /* Smaller border radius */
+  }
+  .image-values {
+      margin-top: 10px; /* Add top margin */
+  }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+  .values {
+      padding: 30px; /* Increased padding for tablet layout */
+  }
+  .values-text h1 {
+      margin-bottom: 15px;
+      font-size: 28px; /* Larger font for tablet */
+  }
+  .values-text h2 {
+      margin-bottom: 15px;
+      font-size: 20px; /* Adjusted font size */
+  }
+  .values-all-images {
+      flex-direction: row;
+      justify-content: space-evenly; /* Even spacing between images */
+  }
+  .values-images1, .values-images2 {
+      margin: 0 15px; /* Add small margin between images */
+  }
+  .values-images1 img, .values-images2 img {
+      width: 100%;
+      max-width: 350px; /* Adjusted max-width */
+      height: auto;
+      border-radius: 25px; /* Medium border radius */
+  }
+  .image-values {
+      margin-top: 10px; /* Add top margin */
+  }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1023px) and (max-width: 1280px) {
+  .values-images1 {
+      margin-right: 100px; /* Reduced margin between images for smaller PC screens */
+  }
+}
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1439px) and (max-width: 1920px) {
+  .values-images1 {
+      margin-right: 180px; /* Increased margin for larger screens */
+  }
+}

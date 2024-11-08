@@ -1,0 +1,56 @@
+.faq-question {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 30px; /* Space between items */
+  margin-bottom: 43px; /* Space below the container */
+}
+
+.faq-question h1 {
+  font-family: "DM Serif Text", serif; /* Font family for the question header */
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+.faq-question {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin-bottom: 30px; /* Reduce bottom margin */
+}
+.faq-question h1 {
+    font-size: 20px; /* Smaller font size for the header */
+    text-align: center; /* Center text alignment */
+}
+.faq-question .btn {
+    font-size: 16px; /* Button font size for mobile */
+}
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+  .faq-question {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 20px; /* Reduce gap between items */
+  }
+
+  .faq-question h1 {
+    width: 100%; /* Full width for header */
+    font-size: 24px; /* Larger font size for the header */
+    text-align: center; /* Center text alignment */
+  }
+  .faq-question .btn {
+    font-size: 20px; /* Button font size for tablets */
+    padding: 15px 60px; /* Padding for button */
+  }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1023px) and (max-width: 1280px) {
+  .faq-question h1 {
+    font-size: 25px; /* Increase font size for the header */
+  }
+}
+
+/* Already Responsive for PC Screens 1440px - 1920px */

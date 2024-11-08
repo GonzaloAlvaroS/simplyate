@@ -1,0 +1,171 @@
+/* Main container for "method-one" section */
+.method-one {
+  width: 100%; /* Full width of the screen */
+  min-height: 55vh; /* Minimum height of 55% of the viewport */
+  margin-top: 50px; /* Adds top margin */
+  display: flex; /* Flex display for horizontal alignment */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  color: white; /* White text color */
+  background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url("../../../assets/affiliationmethod.png"); /* Adds a dark overlay and background image */
+  background-size: cover; /* Scales background image to cover container */
+  background-position: center; /* Centers background image */
+  gap: 100px; /* Space between flex items */
+}
+
+/* Text styling for the "method-one-text" section */
+.method-one-text {
+  margin-top: -10px; /* Slightly shifts content upwards */
+  text-align: justify; /* Justifies text for better readability */
+}
+
+/* Paragraph styling within "method-one-text" */
+.method-one-text p {
+  width: 600px; /* Limits paragraph width */
+  font-weight: 200; /* Light font weight */
+}
+
+/* Heading styling within "method-one-text" */
+.method-one-text h1 {
+  margin-bottom: 20px; /* Adds space below heading */
+  color: #d39000; /* Gold color for the heading */
+  font-family: "Lora", serif; /* Serif font style */
+  font-size: 40px; /* Heading font size */
+  font-weight: 600; /* Bold font weight */
+}
+
+/* Video styling within "method-one-video" */
+.method-one-video video {
+  margin-top: 10px; /* Adds space above video */
+  border-radius: 20px; /* Rounded video corners */
+}
+
+/* ------------------------------------------------------------*/
+
+.method-one-title{
+  text-transform: uppercase;
+background-image: linear-gradient(
+  -225deg,
+  #d39000 0%,
+  #d8b726 29%,
+  #fae84b 67%,
+  #f37610 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+    font-size: 190px;
+}
+
+/* Animation keyframes for text gradient effect */
+@keyframes textclip {
+to {
+  background-position: 200% center; /* Animates gradient across text */
+}
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+.method-one {
+  margin-top: 20px; /* Reduces top margin */
+  margin-bottom: 30px; /* Adds bottom margin */
+  padding: 20px; /* Adds padding */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  flex-direction: column; /* Stacks items vertically */
+  gap: 20px; /* Reduces space between items */
+}
+.method-one-text {
+  text-align: center; /* Centers text alignment */
+}
+.method-one-text p {
+  width: 100%; /* Full width for readability */
+  text-align: justify; /* Justifies text */
+  text-align-last: center; /* Centers last line */
+  font-size: 14px; /* Smaller font size */
+}
+.method-one-text h1 {
+  margin-top: 15px; /* Adds top margin */
+  font-size: 28px; /* Smaller font size for heading */
+}
+.method-one-video video {
+  width: 100%; /* Full width video */
+  height: auto; /* Responsive height */
+  margin-bottom: 25px; /* Bottom margin for spacing */
+}
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+.method-one {
+    padding: 25px; /* Increases padding for spacing */
+    align-items: center; /* Centers content */
+    justify-content: center;
+    flex-direction: column; /* Stacks items vertically */
+    gap: 40px; /* Adjusts space between items */
+}
+.method-one-text {
+    text-align: center; /* Centers text */
+}
+.method-one-text p {
+    width: 100%; /* Full width */
+    text-align: justify;
+    text-align-last: center; /* Centers last line */
+    font-size: 15px; /* Slightly larger font for readability */
+}
+.method-one-text h1 {
+    margin-top: 25px; /* Adds top margin */
+    font-size: 40px; /* Larger font size */
+}
+.method-one-video video {
+    width: 100%;
+    height: auto; /* Responsive height */
+    margin-bottom: 25px;
+}
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1023px) and (max-width: 1280px) {
+.method-one {
+  padding: 20px; /* Adds padding for spacing */
+  gap: 50px; /* Reduces space between items */
+}
+.method-one-text p {
+  width: 500px; /* Limits paragraph width */
+  font-size: 15px; /* Smaller font size for readability */
+}
+.method-one-text h1 {
+  font-size: 36px; /* Slightly smaller font size */
+}
+.method-one-video video {
+  width: 400px; /* Fixed video width */
+  height: auto; /* Responsive height */
+}
+}
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1439px) and (max-width: 1920px) {
+.method-one {
+  gap: 80px; /* Adjusts space between items */
+  padding: 30px; /* Adds padding */
+}
+.method-one-text p {
+  width: 700px; /* Increases paragraph width */
+  font-size: 18px; /* Larger font size */
+}
+.method-one-text h1 {
+  font-size: 48px; /* Larger font size for heading */
+}
+.method-one-video video {
+  width: 450px; /* Fixed video width */
+  height: auto; /* Responsive height */
+}
+}
+

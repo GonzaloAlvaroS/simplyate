@@ -1,0 +1,87 @@
+/* Reset default margin and padding for all elements */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styling */
+nav{
+    width: 100%; /* Full-width navigation bar */
+    color: #fff; /* Text color */
+    background: #000000; /* Background color */
+    padding: 16px 0; /* Vertical padding */
+    position: fixed; /* Fixes nav at the top of the page */
+    top: 0; /* Aligns at the top */
+    left: 0; /* Starts from the left */
+    display: flex; /* Flex layout for horizontal alignment */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Spaces items across the bar */
+    z-index: 1000; /* Ensures the nav is above other content */
+}
+
+/* Logo styling */
+.logo{
+    width: 200px; /* Logo width */
+    height: 55px; /* Logo height */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Navigation list items */
+nav ul li{
+    display: inline-block; /* Horizontal arrangement */
+    list-style: none; /* Removes default list bullets */
+    margin: 0px 30px; /* Horizontal spacing between items */
+    font-size: 17px; /* Text size */
+    font-weight: 700; /* Bold text */
+}
+
+/* Hides menu icon by default */
+.menu-icon{
+    display: none;
+}
+
+/* FAQ link styling */
+.wordfaq{
+    color: #d39000; /* Highlighted color */
+    cursor: pointer; /* Pointer cursor */
+}
+
+
+/* Responsive for Mobile Phones, Tablets and PC Screens (320px - 430px / 600px - 940px / 1024px - 1920px) */
+@media (max-width: 1025px){
+    .logo{
+        margin-left: 0px; /* Adjust logo margin */
+    }
+    nav ul li{
+        margin-left: 5px; /* Reduces spacing for list items */
+    }
+}
+
+@media (max-width: 940px){
+    nav{
+        padding: 15px 0; /* Adjusts padding for smaller screens */
+    }
+    nav ul{
+        position: fixed; /* Fixes menu at right on mobile */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #000000; /* Menu background color */
+        z-index: -1; /* Sends menu behind content until toggled */
+        width: 200px; /* Sets menu width */
+        padding-top: 70px; /* Space from the top */
+        transition: 0.5s; /* Smooth transition */
+    }
+    nav ul li{
+        display: block; /* Stack items vertically */
+        margin: 25px 40px; /* Adjusts spacing for vertical list */
+    }
+    .menu-icon{
+        display: block; /* Shows the menu icon */
+        width: 30px; /* Icon size */
+        cursor: pointer; /* Pointer cursor for icon */
+    }
+    .hide-mobile-menu{
+        right: -200px; /* Hides menu off-screen */
+    }
+}

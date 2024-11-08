@@ -1,0 +1,102 @@
+/* Container for the "infobusiness2" section with centered text and margin */
+.infobusiness2 {
+  justify-content: space-between; /* Justify content with spacing */
+  align-items: center; /* Center-align items vertically */
+  display: block; /* Block display for full width */
+  text-align: center; /* Center-align text within container */
+  margin-bottom: 40px; /* Bottom margin for spacing */
+}
+
+/* Heading styling within "infobusiness2" with serif font and spacing */
+.infobusiness2 h1 {
+  margin-bottom: 40px; /* Adds spacing below the heading */
+  font-family: "DM Serif Text", serif; /* Serif font for heading */
+}
+
+/* Paragraph styling for justified text with maximum width */
+.infobusiness2 p {
+  max-width: 700px; /* Limit width for improved readability */
+  margin: auto; /* Center-aligns the paragraph */
+  text-align: justify; /* Justified text for alignment */
+  text-align-last: center; /* Center-aligns last line */
+}
+
+/* Video styling within "infobusiness2" with top margin */
+.infobusiness2 video {
+  margin-top: 40px; /* Space above the video */
+}
+
+/* Button styling for "btnjoin" with center alignment and top margin */
+.btnjoin {
+  display: block; /* Block display for full width */
+  justify-content: space-between; /* Justify content with spacing */
+  align-items: center; /* Center-align items vertically */
+  margin: auto; /* Center-aligns the button */
+  margin-top: 25px; /* Adds top margin for spacing */
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+  .infobusiness2 {
+    margin: 10px auto; /* Reduces margin for smaller screens */
+    padding: 0 15px; /* Padding for mobile layout */
+  }
+  .infobusiness2 h1 {
+    margin-bottom: 20px; /* Reduces bottom margin for heading */
+    font-size: 20px; /* Smaller font for mobile screens */
+  }
+  .infobusiness2 p {
+    max-width: 100%; /* Full-width paragraph on mobile */
+    margin-left: 0; /* Removes left margin */
+    text-align: justify; /* Justified text for alignment */
+    font-size: 14px; /* Smaller font for readability on mobile */
+  }
+  .infobusiness2 video {
+    width: 100%; /* Full-width video on mobile */
+    height: auto; /* Maintains aspect ratio */
+    margin-top: 20px; /* Reduces top margin */
+  }
+  .btnjoin {
+    width: 100%; /* Full-width button on mobile */
+    max-width: 300px; /* Maximum button width */
+    margin: 30px auto; /* Centers button with top margin */
+    font-size: 16px; /* Smaller font for mobile */
+  }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+  .infobusiness2 {
+    margin: 20px auto; /* Reduces margin for tablets */
+    padding: 0 15px; /* Adds padding */
+  }
+  .infobusiness2 h1 {
+    margin-bottom: 30px; /* Adjusts bottom margin */
+    font-size: 35px; /* Larger font size for tablets */
+  }
+  .infobusiness2 p {
+    max-width: 90%; /* Limits width for readability */
+    margin-left: auto; /* Centers text container */
+    margin-right: auto;
+    text-align: justify; /* Justified text alignment */
+    text-align-last: center; /* Center-aligns last line */
+    font-size: 16px; /* Larger font size */
+  }
+  .infobusiness2 video {
+    width: 100%; /* Full-width video for tablets */
+    height: auto; /* Maintains aspect ratio */
+    margin-top: 30px; /* Adjusts top margin */
+  }
+  .btnjoin {
+    width: 100%; /* Full-width button for tablets */
+    max-width: 350px; /* Maximum button width */
+    margin: 30px auto; /* Centers button with margin */
+    font-size: 18px; /* Adjusts font size for better readability */
+  }
+}
+
+/* Alredy Responsive for PC Screens 1024px - 1280px */
+
+/* Alredy Responsive for PC Screens 1440px - 1920px */
+
