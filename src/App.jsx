@@ -48,7 +48,9 @@ const App = () => {
 
   return (
      <Router basename="/simplyate" 
-     future={{v7_startTransition: true, v7_relativeSplatPath: true}}>
+     future={{
+      v7_startTransition: true,
+      v7_relativeSplatPath: true,}}>
      <ScrollToTop/>
      <Navbar/>
      <Routes>
