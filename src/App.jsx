@@ -47,7 +47,7 @@ function ScrollToTop() {
 const App = () => {
 
   return (
-    <Router basename="/simplyate" future={{v7_startTransition: true, v7_relativeSplatPath: true}}>
+    <Router basename="/simplyate">
      <ScrollToTop/>
      <Navbar/>
      <Routes>
