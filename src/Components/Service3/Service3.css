@@ -1,0 +1,197 @@
+/* General styles for .service3 container */
+.service3 {
+    width: 100%; /* Full width of container */
+    min-height: 75vh; /* Minimum height to cover 75% of viewport height */
+    margin-bottom: 42px; /* Bottom spacing */
+    color: white; /* Text color */
+    background-color: rgb(22, 22, 22); /* Dark background color */
+    background-size: cover; /* Ensures background image covers entire area */
+    background-position: center; /* Centers the background image */
+}
+
+/* Text container within .service3 section */
+.service3-text {
+    display: block; /* Displays as block element */
+    text-align: center; /* Centers text */
+    padding-top: 25px; /* Top padding */
+}
+
+/* Styles for h1 within .service3-text */
+.service3-text h1 {
+    font-family: "Inria Serif", serif; /* Custom serif font */
+}
+
+/* Styles for h2 within .service3-text */
+.service3-text h2 {
+    color: #d39000; /* Gold-like color */
+    font-family: "Lora", serif; /* Custom serif font */
+    font-size: 18px; /* Font size */
+}
+
+/* Text overlay for images in service3 */
+.service3-imagetext {
+    display: flex; /* Enables flex properties */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    flex-direction: column; /* Stacks items vertically */
+    position: absolute; /* Positioned relative to .service3-image */
+    height: 300px; /* Height of overlay */
+    width: 300px; /* Width of overlay */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff; /* White text color */
+    background: rgba(0, 15, 152, 0.3); /* Semi-transparent blue background */
+    border-radius: 50%; /* Circular overlay */
+    opacity: 0; /* Hidden by default */
+    transition: 0.4s; /* Smooth transition for opacity change */
+}
+
+/* Text within overlay with custom font and size */
+.service3-imagetext p {
+    font-family: "DM Serif Text", serif;
+    font-size: 35px;
+}
+
+/* Display overlay when hovering over .service3-image */
+.service3-image:hover .service3-imagetext {
+    opacity: 1; /* Shows overlay */
+}
+
+/* Styles for image container within service3 */
+.service3-image {
+    position: relative; /* Allows absolute positioning of .service3-imagetext */
+}
+
+/* Image container layout */
+.service3-images {
+    margin-top: 40px; /* Top margin */
+    display: flex; /* Enables flex properties */
+    align-items: center; /* Centers images vertically */
+    justify-content: center; /* Centers images horizontally */
+    position: relative;
+    gap: 100px; /* Space between images */
+}
+
+/* Style for each image within .service3-images */
+.service3-images img {
+    width: 300px; /* Image width */
+    border-radius: 50%; /* Circular image */
+}
+
+/* Scale effect on image hover */
+.service3-images img:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+    transition: 0.5s; /* Smooth transition for scaling */
+}
+
+/* Hover effect for entire image container */
+.service3-image:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px - 600px */
+@media (max-width: 600px) {
+    .service3 {
+        min-height: auto;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .service3-text h1 {
+        margin: 10px 0;
+        font-size: 22px; /* Smaller font for h1 */
+    }
+    .service3-text h2 {
+        font-size: 16px; /* Smaller font for h2 */
+    }
+    .service3-images {
+        flex-direction: column; /* Stacks images vertically */
+        align-items: center;
+        gap: 0px; /* Removes gap */
+    }
+    .service3-image {
+        width: 100%; /* Full width for images */
+        max-width: 300px;
+        margin-bottom: 25px;
+    }
+    .service3-images img {
+        width: 100%; /* Adjusts image width to container */
+    }
+    .service3-images img:hover {
+        transform: scale(1.05); /* Slight scale increase */
+    }
+    .service3-imagetext {
+        width: 100%; /* Full width for overlay */
+        height: 100%; /* Full height for overlay */
+    }
+}
+
+/* Responsive for Tablets 768px - 940px */
+@media (min-width: 768px) and (max-width: 940px) {
+    .service3 {
+        min-height: auto;
+        padding: 20px; /* Add padding for better spacing */
+    }
+    .service3-text h1 {
+        font-size: 30px; /* Increase font size for h1 */
+    }
+    .service3-text h2 {
+        font-size: 22px; /* Increase font size for h2 */
+    }
+    .service3-images {
+        flex-direction: row; /* Arrange images in a row */
+        gap: 40px; /* Reduce gap between images */
+    }
+    .service3-image {
+        width: 200px; /* Set a fixed width for images */
+    }
+    .service3-images img {
+        width: 200px; /* Adjust image width for tablet */
+    }
+    .service3-imagetext p {
+        font-size: 24px; /* Adjust font size in overlay */
+    }
+    .service3-imagetext{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .service3 {
+        min-height: auto;
+        padding: 30px;
+    }
+    .service3-text h1 {
+        font-size: 32px;
+    }
+    .service3-text h2 {
+        font-size: 24px;
+    }
+    .service3-images {
+        justify-content: space-around;
+        gap: 40px;
+    }
+    .service3-images img{
+        width: 280px;
+    }
+    .service3-images img:hover {
+        transform: scale(1.1); /* Increased scale on hover */
+    }
+    .service3-imagetext{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .service3 {
+        min-height: auto;
+        padding: 30px;
+    }
+}

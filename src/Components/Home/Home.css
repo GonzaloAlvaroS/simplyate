@@ -1,0 +1,59 @@
+.home {
+    width: 100%; /* The container will occupy 100% of the available width */
+    min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
+    background: linear-gradient(rgba(22, 22, 22, 0.7),rgba(22, 22, 22, 0.7)), url("../../assets/backgroundbusiness.png"); /* Background with a dark gradient overlay on an image */
+    background-size: cover; /* The background image will cover the entire area without distortion */
+    background-position: 0px 80px; /* Adjusts the background image position (80px from the top) */
+    color: white; /* Sets text color to white */
+    display: flex; /* Uses flexbox to align the elements inside the container */
+    align-items: center; /* Vertically centers the elements within the container */
+    justify-content: center; /* Horizontally centers the elements within the container */
+}
+
+.hometext {
+    text-align: center; /* Centers the text inside the container */
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out; /* Smoothens the animations for transform and opacity */
+    transform: translateY(-100%); /* Initially moves the text upwards, out of view */
+    opacity: 0; /* Makes the text invisible on page load */
+}
+
+.hometext.visible {
+    transform: translateY(0); /* Moves the text to its original position when the 'visible' class is added */
+    opacity: 1; /* Makes the text visible when the 'visible' class is added */
+}
+
+.hometext h1 {
+    font-family: "Inria Serif", serif; /* Applies the 'Inria Serif' font to the heading */
+    font-size: 80px; /* Defines the size of the heading */
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+    .hometext h1 {
+        margin-top: 40px; /* Adds top margin to separate the heading from the top edge */
+        font-size: 55px; /* Reduces the heading size for small screens */
+    }
+    .hometext p {
+        margin-top: 20px; /* Adds top margin to the paragraphs */
+        font-size: 15px; /* Reduces paragraph text size for small screens */
+    }
+}
+
+
+/* Already Responsive for Tablets 600px - 940px */
+
+/* Already Responsive for PC Screens 1024px - 1280px */
+
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .hometext h1 {
+        font-size: 120px; /* Increases the heading size for larger screens */
+    }
+    .hometext p {
+        font-size: 25px; /* Increases the paragraph text size for larger screens */
+    }
+}
+ 
+  

@@ -1,0 +1,49 @@
+.conclusion {
+    margin-bottom: 45px; /* Bottom margin for spacing */
+    display: block; /* Block display to stack elements vertically */
+    justify-content: center; /* Centers items horizontally if applied in flex context */
+    align-items: center; /* Centers items vertically if applied in flex context */
+    text-align: center; /* Centers text within the container */
+}
+
+.conclusion h1 {
+    font-family: "DM Serif Text", serif; /* Serif font style for primary heading */
+}
+
+.conclusion h2 {
+    color: #d39000; /* Orange color for secondary heading */
+    font-family: "Lora", serif; /* Serif font style for secondary heading */
+    font-size: 18px; /* Font size for the secondary heading */
+}
+
+.conclusion button {
+    margin-top: 30px; /* Space above the button */
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+    .conclusion {
+        padding: 15px; /* Adds padding for mobile devices */
+    }
+    .conclusion h1 {
+        font-size: 30px; /* Smaller font size for heading on mobile */
+    }
+    .conclusion h2 {
+        margin-bottom: 15px; /* Space below secondary heading */
+    }
+    .conclusion button {
+        width: 50%; /* Button takes up 50% of the width on mobile */
+    }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+    .conclusion {
+        padding: 15px; /* Adds padding for tablet devices */
+    }
+}
+
+/* Already Responsive for PC Screens 1024px - 1280px */
+
+/* Already Responsive for PC Screens 1440px - 1920px */

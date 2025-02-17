@@ -1,0 +1,99 @@
+/* General styles for the ValuesHome section */
+.valueshome{
+    width: 100%;
+    min-height: 69vh;
+    margin-bottom: 40px;
+    background: linear-gradient(rgba(31, 29, 27, 0.7), rgba(28, 28, 31, 0.7)), url("../../assets/valuesbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text container for values */
+.valueshome-text{
+    max-width: 800px; /* Keeps the text within a max-width for large screens */
+    text-align: center;
+}
+
+/* Styling for the h1 element */
+.valueshome-text h1{
+    font-size: 40px; /* Larger font size for wider screens */
+    font-weight: 600;
+}
+
+/* Styling for the h3 element */
+.valueshome h3{
+    color: #d39000;
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (min-width: 320px) and (max-width: 430px) {
+    .valueshome {
+        min-height: 50vh; /* Reduces the height for mobile screens */
+        padding: 20px; /* Adds padding to ensure content doesn't touch the edges */
+    }
+    .valueshome-text {
+        max-width: 90%; /* Allows the text to take up more space on small screens */
+    }
+    .valueshome-text h1 {
+        font-size: 24px; /* Makes the text smaller for mobile devices */
+    }
+    .valueshome h3 {
+        font-size: 16px; /* Reduces the font size for the h3 text */
+    }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+    .valueshome {
+        min-height: 60vh; /* Slightly increases the height for tablet screens */
+        padding: 40px; /* Adds more padding for better spacing */
+    }
+    .valueshome-text {
+        max-width: 85%; /* Allows the text to take up more space */
+    }
+    .valueshome-text h1 {
+        font-size: 35px; /* Makes the text slightly smaller than on larger screens */
+    }
+    .valueshome h3 {
+        font-size: 20px; /* Increases the font size for the h3 text */
+    }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .valueshome {
+        min-height: 70vh; /* Increases the height for larger screens */
+        padding: 50px; /* Adds more padding for better spacing */
+    }
+    .valueshome-text {
+        max-width: 75%; /* Allows the text to take up more space on medium screens */
+    }
+    .valueshome-text h1 {
+        font-size: 45px; /* Makes the text slightly smaller for PC */
+    }
+    .valueshome h3 {
+        font-size: 25px; /* Increases the font size for h3 on PC */
+    }
+}
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .valueshome {
+        min-height: 75vh; /* Increases the height for large PC screens */
+        padding: 70px; /* Adds more padding to give space around the content */
+    }
+    .valueshome-text {
+        max-width: 65%; /* Further reduces the width for a better layout on large screens */
+    }
+    .valueshome-text h1 {
+        font-size: 50px; /* Makes the text larger for big screens */
+    }
+    .valueshome h3 {
+        font-size: 30px; /* Increases the font size for h3 */
+    }
+}

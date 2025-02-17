@@ -1,0 +1,171 @@
+/* Base styles for the team component */
+.team {
+    margin: 35px 100px;
+    padding: 0 80px;
+    position: relative;
+    text-align: center;
+}
+
+/* Title styling for the team section */
+.team-title h1 {
+    font-family: "DM Serif Text", serif;
+}
+
+/* Styling for navigation buttons */
+.next-btn, .back-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #000000;
+}
+.back-btn {
+    right: auto;
+    left: 0;
+}
+/* Container for the slider */
+.slider {
+    overflow: hidden;
+}
+/* List containing all slides */
+.slider ul {
+    display: flex;
+    width: 200%; /* Expanded width for smooth scrolling */
+    overflow-x: hidden;
+    transition: 0.5s; /* Smooth transition effect */
+}
+/* Individual slides */
+.slider ul li {
+    list-style: none;
+    width: 16.7%; /* Adjusted to fit multiple slides */
+    padding: 20px;
+}
+/* Styling for the slide container */
+.slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 25px 20px 10px 20px; /* Adjusted padding */
+    border-radius: 10px;
+    color: #d39000;
+    line-height: 1.4;
+    width: 100%;
+    height: 395px;
+}
+/* User information section */
+.user-info {
+    align-items: center;
+    font-size: 15px;
+}
+.user-info h3 {
+    color: black;
+}
+.user-info p {
+    padding-top: 10px;
+}
+/* Styling for team member images */
+.team-image {
+    width: 100%;
+    height: 300px;
+}
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+    .team {
+        margin: 0px; 
+        padding: 0;
+    }
+    .slider ul {
+        display: block; /* Stack items vertically */
+        width: 100%; /* Full width for each item */
+        transition: none; /* Disable sliding animation */
+    }
+    .slider ul li {
+        width: 100%; /* Show fewer slides at once */
+    }
+    .slider ul li:nth-child(n+4) {
+        display: none; /* Hide items after the third */
+    }
+    .slide {
+        width: 100%; /* Adjust width to fit mobile screens */
+        height: auto; /* Allow height to adjust dynamically */
+        margin: 0;
+    }
+    .team-image {
+        width: 100%;
+    }
+    .next-btn, .back-btn {
+        display: none;
+    }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+    .team {
+        margin: 0 40px; /* Moderate margins for tablets */
+        padding: 0; /* Adjusted inner padding */
+    }
+    .slider ul {
+        display: grid; /* Use a grid layout */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        width: 100%; /* Full width for each item */
+        transition: none; /* Disable sliding animation */
+    }
+    .slider ul li {
+        width: 100%; /* Show more slides at once on tablets */
+    }
+    .slide {
+        width: 100%; /* Adjust width for tablet screens */
+        height: auto; /* Adjust height for content */
+    }
+    .team-image {
+        width: 100%;
+    }
+    .next-btn, .back-btn {
+        display: none;
+    }
+}
+
+/* Responsive for PC Screens 1024px */
+@media (min-width: 1024px) and (max-width: 1025px) {
+    .team {
+        margin: 40px 80px; /* Increase margins for medium desktops */
+        padding: 0 60px; /* Adjusted inner padding */
+    }
+    .slider ul{
+        width: 320%; /* Show 5 slides at once */
+    }
+    .slider ul li {
+        width: 13.33%;
+    }
+    .slide {
+        width: 300px; /* Maintain width for medium desktops */
+        height: 400px; /* Slightly taller slides */
+    }
+    .team-image {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+/* Already Responsive for PC Screens 1280px - 1440px */
+
+/* Responsive for PC Screens 1920px */
+@media (min-width: 1920px) {
+    .slide {
+        width: 100%;
+        height: auto;
+    }
+    .team-image{
+        width: 100%;
+        height: auto;
+    }
+    .user-info {
+        align-items: center;
+        font-size: 22px;
+    }
+    .next-btn, .back-btn{
+        width: 60px;
+    }
+}

@@ -1,0 +1,184 @@
+.contact {
+  width: 100%;
+  height: 450px;
+  margin: 45px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(22, 22, 22); /* Sets background color */
+}
+.contact-col {
+  margin: 0px 90px;
+  flex-basis: 48%; /* Defines width as 48% for flexibility */
+  color: #ffffff; /* Sets text color to white */
+}
+.contact-col h3 {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: #d39000; /* Sets heading color */
+  font-weight: 500;
+  font-size: 25px;
+}
+.contact-col h3 img {
+  width: 65px;
+  margin-left: 15px; /* Adds space on left for image */
+}
+.contact-col p {
+  max-width: 450px;
+  list-style: 0.3; /* Sets spacing for list items */
+}
+.contact-col ul li {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.contact-col ul li img {
+  width: 25px;
+  margin-right: 10px;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding: 15px;
+  display: block;
+  background: #EBECFE; /* Sets background for form fields */
+  border: 0;
+  outline: 0;
+  resize: none;
+}
+.contact-col span {
+  margin: 20px 0;
+  display: block;
+}
+.contact-col2 {
+  margin-top: 20px;
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+  .contact {
+      height: auto;
+      flex-direction: column; /* Stacks columns vertically */
+  }
+  .contact-col {
+      margin: 10px 0;
+      padding: 20px;
+      flex-basis: 100%; /* Makes each column full-width */
+  }
+  .contact-col h3 {
+      margin-bottom: 15px;
+      font-size: 22px; /* Reduces heading size */
+  }
+  .contact-col p {
+      max-width: 100%;
+      text-align: justify; /* Justifies text for readability */
+  }
+  .contact-col ul li {
+      margin: 15px 0; /* Reduces spacing between list items */
+  }
+  .contact form input, 
+  .contact form textarea {
+      padding: 12px; /* Reduces padding for compact layout */
+  }
+  .contact-col span {
+      margin: 15px 0;
+  }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+  .contact {
+      height: auto;
+      padding: 20px;
+      justify-content: center;
+      flex-direction: row; /* Keeps columns horizontal */
+  }
+  .contact-col {
+      margin: 20px 0;
+      padding: 0 40px;
+      flex-basis: 100%;
+  }
+  .contact-col h3 {
+      margin-bottom: 15px;
+      font-size: 24px;
+  }
+  .contact-col h3 img {
+      width: 50px;
+      margin-left: 10px;
+      margin-right: 30px;
+  }
+  .contact-col p {
+      max-width: 100%;
+      text-align: justify;
+  }
+  .contact-col ul li {
+      margin: 10px 0;
+  }
+  .contact-col ul li img {
+      width: 22px;
+      margin-right: 8px;
+  }
+  .contact form input, 
+  .contact form textarea {
+      padding: 14px;
+  }
+  .contact-col span {
+      margin: 20px 0;
+  }
+}
+
+/* Responsive for PC screens 1024px - 1280px */
+@media (min-width: 1023px) and (max-width: 1280px) {
+  .contact {
+      height: 500px;
+      padding: 20px 40px; /* Adds horizontal padding */
+  }
+  .contact-col {
+      margin: 0px 40px;
+      flex-basis: 45%; /* Adjusts column width for PC screens */
+  }
+  .contact-col h3 {
+      font-size: 24px;
+  }
+  .contact-col p {
+      max-width: 400px;
+      font-size: 16px; /* Reduces font size slightly */
+  }
+  .contact-col ul li {
+      margin: 15px 0;
+  }
+  .contact-col ul li img {
+      width: 22px; /* Reduces image width */
+  }
+}
+
+/* Responsive for PC Screen 1440px - 1920px */
+@media (min-width: 1439px) and (max-width: 1920px) {
+  .contact {
+      height: 550px;
+      padding: 30px 80px; /* Increases padding for large screens */
+  }
+  .contact-col {
+      margin: 0px 100px;
+      flex-basis: 48%; /* Sets flexible width for columns */
+  }
+  .contact-col h3 {
+      font-size: 26px;
+  }
+  .contact-col p {
+      max-width: 500px;
+      font-size: 18px; /* Increases font size */
+  }
+  .contact-col ul li {
+      margin: 20px 0;
+  }
+  .contact-col ul li img {
+      width: 30px; /* Enlarges icon size for emphasis */
+  }
+  .contact form input, .contact form textarea {
+      padding: 18px; /* Increases padding for form fields */
+  }
+}

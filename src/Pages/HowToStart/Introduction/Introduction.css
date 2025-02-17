@@ -1,0 +1,180 @@
+.introduction {
+  margin-top: 130px; /* Adds top margin to separate section from previous content */
+  display: block; /* Sets display to block to stack elements vertically */
+  align-items: center; /* Centers items vertically if used in a flex context */
+  justify-content: space-between; /* Space distribution for items if used in a flex context */
+}
+
+.introduction p {
+  max-width: 700px; /* Limits paragraph width for better readability */
+  margin: auto; /* Centers paragraph horizontally */
+  text-align: justify; /* Justifies text for even alignment */
+  text-align-last: center; /* Centers the last line of justified text */
+}
+
+/* ----------------------------------------------------------------- */
+
+.introduction-title {
+  width: 100%; /* Full width of the title container */
+  margin-bottom: 40px; /* Bottom margin for spacing */
+  display: flex; /* Flex display to center-align title content */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  position: relative; /* Sets position for potential absolute positioning of child elements */
+}
+
+.introduction-title h1 {
+  width: 100%; /* Full width for the heading */
+  margin-bottom: 30px; /* Bottom margin to space from following elements */
+  text-align: center; /* Centers text */
+  position: relative; /* Allows positioning of pseudo-element within the h1 */
+  font-family: "DM Serif Text", serif; /* Serif font for a classic look */
+  font-size: 40px; /* Font size for main heading */
+}
+
+.introduction-title h1:after {
+  width: 100%; /* Full width for the after pseudo-element */
+  height: 100%; /* Full height for the after pseudo-element */
+  top: 50%; /* Centers the pseudo-element vertically */
+  left: 0; /* Aligns pseudo-element to the left */
+  content: ""; /* Empty content to create a block element */
+  line-height: 48px; /* Adjusts line height for consistent spacing */
+  animation: abomination3 1.5s linear 1; /* Animates the pseudo-element */
+  animation-fill-mode: forwards; /* Keeps the animation state after completion */
+}
+
+  
+@keyframes abomination3 {
+    0% {
+      content: "-";
+    }
+    3% {
+      content: "- ";
+    }
+    6% {
+      content: "- Y";
+    }
+    9% {
+      content: "- YO";
+    }
+    12% {
+      content: "- YOU ";
+    }
+    15% {
+      content: "- YOUR";
+    }
+    18% {
+      content: "- YOUR ";
+    }
+    21% {
+      content: "- YOUR F";
+    }
+    24% {
+      content: "- YOUR FU";
+    }
+    27% {
+      content: "- YOUR FUT";
+    }
+    30% {
+      content: "- YOUR FUTU";
+    }
+    33% {
+      content: "- YOUR FUTUR";
+    }
+    36% {
+      content: "- YOUR FUTURE";
+    }
+    39% {
+      content: "- YOUR FUTURE ";
+    }
+    42% {
+      content: "- YOUR FUTURE S";
+    }
+    45% {
+      content: "- YOUR FUTURE ST";
+    }
+    48% {
+      content: "- YOUR FUTURE STA";
+    }
+    51% {
+      content: "- YOUR FUTURE STAR";
+    }
+    54% {
+      content: "- YOUR FUTURE START";
+    }
+    57% {
+      content: "- YOUR FUTURE STARTS";
+    }
+    60% {
+      content: "- YOUR FUTURE STARTS ";
+    }
+    63% {
+      content: "- YOUR FUTURE STARTS H";
+    }
+    66% {
+      content: "- YOUR FUTURE STARTS HE";
+    }
+    69% {
+      content: "- YOUR FUTURE STARTS HER";
+    }
+    72% {
+      content: "- YOUR FUTURE STARTS HERE";
+    }
+    75% {
+      content: "- YOUR FUTURE STARTS HERE ";
+    }
+    78% {
+        content: "- YOUR FUTURE STARTS HERE A";
+      }
+      81% {
+        content: "- YOUR FUTURE STARTS HERE AN";
+      }
+      84% {
+        content: "- YOUR FUTURE STARTS HERE AND";
+      }
+      87% {
+        content: "- YOUR FUTURE STARTS HERE AND ";
+      }
+      90% {
+        content: "- YOUR FUTURE STARTS HERE AND N";
+      }
+      93% {
+        content: "- YOUR FUTURE STARTS HERE AND NO";
+      }
+      96% {
+        content: "- YOUR FUTURE STARTS HERE AND NOW";
+      }
+      98% {
+        content: "- YOUR FUTURE STARTS HERE AND NOW ";
+      }
+      100% {
+        content: "- YOUR FUTURE STARTS HERE AND NOW -";
+      }
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+  .introduction {
+      margin-top: 200px; /* Increases top margin for spacing on smaller screens */
+      padding: 20px; /* Adds padding for better spacing within the section */
+  }
+  .introduction p {
+      max-width: 100%; /* Ensures paragraph takes full width on mobile */
+      font-size: 14px; /* Reduces font size for readability on smaller screens */
+  }
+  .introduction-title {
+      margin: 0; /* Removes default margin for compact layout */
+      transform: translateY(-110px); /* Adjusts vertical position to fit mobile view */
+  }
+  .introduction-title h1 {
+      margin: 0; /* Resets margin for consistency on mobile */
+      font-size: 25px; /* Scales down heading size for mobile readability */
+  }
+}
+
+/* Already Responsive for Tablets 768px - 820px */
+
+/* Already Responsive for PC Screens 1024px - 1280px */
+
+/* Already Responsive for PC Screens 1440px - 1920px */

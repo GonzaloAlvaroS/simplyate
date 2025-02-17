@@ -1,0 +1,171 @@
+.service2 {
+    margin: 0 auto; /* Centers the main container */
+}
+.service2-title{
+    margin-bottom: 40px;
+}
+.service2-title h1{
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+}
+.service2line1, .service2line2, .service2line3 {
+    width: 80%; /* Sets the width of each line container */
+    min-height: 15vh; /* Sets a minimum height */
+    margin-bottom: 43px; /* Adds space between each line */
+    color: rgb(255, 255, 255); /* Sets the text color to white */
+    display: flex; /* Displays items in a row */
+    align-items: center; /* Vertically centers items */
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out; /* Animates transform and opacity */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Background settings for each service line */
+.service2line1 {
+    background: linear-gradient(rgba(31, 29, 27, 0.7), rgba(28, 28, 31, 0.7)), url("../../assets/whoarewe.png");
+    background-size: cover;
+    background-position: 0px 460px;
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+.service2line2 {
+    margin-left: auto; /* Moves the element to the right */
+    background: linear-gradient(rgba(31, 29, 27, 0.7), rgba(28, 28, 31, 0.7)), url("../../assets/howitworks.png");
+    background-size: cover;
+    background-position: 0px 300px;
+    justify-content: flex-end; /* Aligns content to the right */
+}
+
+.service2line3 {
+    background: linear-gradient(rgba(31, 29, 27, 0.7), rgba(28, 28, 31, 0.7)), url("../../assets/howtostart.png");
+    background-size: cover;
+    background-position: 0px 230px;
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+/* Padding settings for text containers */
+.service2text1, .service2text3 {
+    padding-left: 20px;
+}
+
+.service2text2 {
+    padding-right: 20px;
+}
+
+/* Font settings for each header */
+.service2text1 h1, .service2text2 h1, .service2text3 h1 {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "DM Serif Text", serif;
+}
+
+/* Initial position settings for slide-in animation */
+.service2line1, .service2line3 {
+    transform: translateX(100%); /* Starts from the right */
+    opacity: 0;
+}
+
+.service2line2 {
+    transform: translateX(-100%); /* Starts from the left */
+    opacity: 0;
+}
+
+/* Visibility settings for animated elements */
+.service2line1.visible, .service2line2.visible, .service2line3.visible {
+    transform: translateX(0); /* Moves elements to original position */
+    opacity: 1; /* Makes elements visible */
+}
+
+/* Hover effect for each line */
+.service2line1:hover, .service2line3:hover {
+    transform: scale(1.1) translateX(49px); /* Slight scale and slide effect */
+    transition: 1s;
+}
+
+.service2line2:hover {
+    transform: scale(1.1) translateX(-49px); /* Slight scale and slide effect */
+    transition: 1s;
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+    .service2line1, .service2line2, .service2line3 {
+        width: 100%;
+        min-height: 20vh; /* Increases height for mobile */
+        background-position: center;
+        justify-content: center; /* Centers content horizontally */
+    }
+    .service2text1, .service2text2, .service2text3 {
+        padding: 0; /* Removes padding */
+    }
+    .service2text1 h1, .service2text2 h1, .service2text3 h1 {
+        font-size: 22px; /* Adjusts font size for smaller screens */
+        text-align: center; /* Centers text */
+    }
+    .service2line1:hover, .service2line3:hover, .service2line2:hover {
+        transform: none; /* Disables hover scaling on mobile */
+    }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+    .service2 {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items horizontally */
+    }
+    .service2line1, .service2line2, .service2line3 {
+        width: 100%;
+        margin: 20px 0; /* Adds vertical spacing */
+        min-height: 22vh; /* Increases minimum height */
+        background-position: center;
+        justify-content: center; /* Centers content horizontally */
+    }
+    .service2text1, .service2text2, .service2text3 {
+        padding: 0;
+    }
+    .service2text1 h1, .service2text2 h1, .service2text3 h1 {
+        font-size: 40px; /* Larger font size for tablets */
+        text-align: center;
+    }
+    .service2line1:hover, .service2line2:hover, .service2line3:hover {
+        transform: none; /* Disables hover scaling on tablets */
+    }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .service2 {
+        margin-bottom: 15px; /* Reduces bottom margin */
+    }
+    .service2line1, .service2line2, .service2line3 {
+        width: 80%; /* Restricts width to 80% */
+        min-height: 20vh;
+    }
+    .service2text1 h1, .service2text2 h1, .service2text3 h1 {
+        font-size: 32px; /* Adjusts font size */
+    }
+    .service2line1:hover, .service2line2:hover, .service2line3:hover {
+        transform: scale(1.1) translateX(35px); /* Slight scale on hover */
+        transition: 1s;
+    }
+    .service2line2:hover {
+        transform: scale(1.1) translateX(-35px); /* Slide effect for line 2 */
+        transition: 1s;
+    }
+}
+
+/* Responsive for PC Screens 1440px - 1910px */
+@media (min-width: 1440px) and (max-width: 1910px) {
+    .service2text1 h1, .service2text2 h1, .service2text3 h1 {
+        font-size: 40px; /* Increases font size for larger screens */
+    }
+}
+
+/* Responsive for PC Screens 1920px */
+@media (min-width: 1910px) and (max-width: 1920px) {
+    .service2text1 h1, .service2text2 h1, .service2text3 h1 {
+        font-size: 50px; /* Largest font size for extra-large screens */
+    }
+}

@@ -1,0 +1,167 @@
+/* Main container styling for .lowerpart */
+.lowerpart {
+    height: 280px; /* Fixed height */
+    display: flex; /* Enables flexbox layout */
+    align-items: flex-start; /* Aligns items to the top */
+    justify-content: center; /* Centers items horizontally */
+    position: relative; /* Enables positioning for child elements */
+    background-color: #000000; /* Sets background color to black */
+}
+
+/* Styling for the main info section inside .lowerpart */
+.lowerpartinfo {
+    display: flex; /* Flex layout for horizontal alignment */
+    align-items: start; /* Aligns content to the top */
+    justify-content: center; /* Centers content horizontally */
+    margin-top: 35px; /* Space above */
+    gap: 100px; /* Space between child elements */
+}
+
+/* Text and image styling within .lowerinfo */
+.lowerinfo {
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+}
+
+/* Styling for headings within .lowerinfo */
+.lowerinfo h3 {
+    color: white; /* Text color */
+    font-family: "Montserrat", sans-serif; /* Sets font */
+}
+
+/* Styling for paragraphs within .lowerinfo */
+.lowerinfo p {
+    margin-top: 17px; /* Space above paragraph */
+    color: white; /* Text color */
+    font-family: "Montserrat", sans-serif; /* Sets font */
+    font-size: 16px; /* Text size */
+    font-weight: 420; /* Text weight */
+}
+
+/* Image styling within .lowerinfo */
+.lowerinfo img {
+    width: 200px; /* Image width */
+}
+
+/* Styling for .logobutton container */
+.logobutton {
+    margin-left: -16px; /* Negative margin for positioning */
+    margin-top: 25px; /* Space above */
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically */
+    justify-content: left; /* Aligns items to the left */
+}
+
+/* Styling for images within .logobutton */
+.logobutton img {
+    width: 32px; /* Sets image size */
+    margin-left: 20px; /* Space to the left */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Styling for elements with .wordlinkpage to indicate links */
+.wordlinkpage {
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Responsive for Mobile Phones 320px - 430px - 600px */
+@media (max-width: 600px) {
+    .lowerpart {
+        height: auto; /* Adjusts height to fit content */
+    }
+    .lowerpartinfo {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items */
+        text-align: center; /* Centers text */
+        gap: 30px; /* Reduces space between elements */
+    }
+    .lowerinfo img {
+        width: 250px; /* Enlarges image for mobile */
+    }
+
+    .logobutton img {
+        width: 30px; /* Adjusts image size */
+        margin-bottom: 25px; /* Space below image */
+        transform: translateX(40px); /* Shifts position horizontally */
+    }
+}
+
+/* Responsive for Tablets 768px - 940px */
+@media (min-width: 768px) and (max-width: 940px) {
+    .lowerpart {
+        height: auto; /* Adjusts height to fit content dynamically */
+        justify-content: center; /* Centers items horizontally */
+        padding: 20px; /* Adds padding for better spacing */
+        padding-top: 0;
+    }
+    .lowerpartinfo {
+        flex-direction: row; /* Aligns items horizontally */
+        align-items: flex-start; /* Aligns items to the top */
+        gap: 20px; /* Moderate space between elements */
+        text-align: left; /* Keeps text aligned to the left */
+    }
+    .lowerinfo img {
+        width: 180px; /* Adjusts image size for tablets */
+    }
+    .lowerinfo h3 {
+        font-size: 20px; /* Adjusts heading size for readability */
+    }
+    .lowerinfo p {
+        font-size: 14px; /* Reduces font size for compact layout */
+    }
+    .logobutton {
+        margin-top: 15px; /* Reduces space above */
+        justify-content: flex-start; /* Aligns content to the left */
+    }
+    .logobutton img {
+        width: 28px; /* Shrinks icon size */
+        margin-left: 15px; /* Reduces left margin */
+    }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .lowerpart {
+        height: 300px; /* Slightly increases height */
+        padding: 30px; /* Adds padding for better spacing */
+    }
+    .lowerpartinfo {
+        gap: 50px; /* Reduces gap between elements */
+    }
+    .lowerinfo img {
+        width: 220px; /* Scales images for this screen size */
+    }
+    .lowerinfo h3 {
+        font-size: 22px; /* Increases heading size */
+    }
+    .lowerinfo p {
+        font-size: 15px; /* Adjusts text size for readability */
+    }
+    .logobutton img {
+        width: 34px; /* Enlarges icons */
+    }
+}
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .lowerpart {
+        height: 320px; /* Increases height for spacious layout */
+        padding: 40px; /* Adds more padding */
+    }
+    .lowerpartinfo {
+        gap: 70px; /* Increases gap between elements */
+    }
+    .lowerinfo img {
+        width: 250px; /* Enlarges images */
+    }
+    .lowerinfo h3 {
+        font-size: 24px; /* Increases heading size */
+    }
+    .lowerinfo p {
+        font-size: 16px; /* Keeps text size consistent */
+    }
+    .logobutton img {
+        width: 36px; /* Slightly larger icons for clarity */
+        margin-left: 25px; /* Adds margin for balanced spacing */
+    }
+}

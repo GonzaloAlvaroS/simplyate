@@ -1,0 +1,265 @@
+/* Main container for the business info section */
+.infobusiness {
+  width: 100%; /* Full width */
+  margin-top: 120px; /* Top margin */
+}
+
+/* Flex container for aligning business info content */
+.infobusinessall {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  gap: 100px; /* Space between elements */
+}
+
+/* Aligns right section of the business info */
+.infobusiness-right {
+  order: 1; /* Sets the element order */
+}
+
+/* Business info image styling */
+.image-infobusiness {
+  width: 500px; /* Image width */
+  height: 500px; /* Image height */
+  border-radius: 10px; /* Rounds image corners */
+}
+
+/* Title styling in business info section */
+.infobusiness h2 {
+  margin: 10px 0; /* Vertical spacing */
+  color: #000000; /* Text color */
+  font-family: "DM Serif Text", serif; /* Font style */
+  font-size: 35px; /* Text size */
+}
+
+/* Subtitle styling in business info section */
+.infobusiness h3 {
+  width: 350px; /* Width for subtitle */
+  color: #d39000; /* Text color */
+  font-family: "Lora", serif; /* Font style */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Text weight */
+}
+
+/* Paragraph styling in business info section */
+.infobusiness p {
+  width: 550px; /* Width for paragraph */
+  text-align: justify; /* Justifies text */
+  color: #1b1b1b; /* Text color */
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Title container styling in the business info section */
+.titleinfobusiness {
+  width: 100%; /* Full width */
+  margin-bottom: 40px; /* Bottom margin */
+  display: flex; /* Flex layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  position: relative; /* Relative position for animation */
+}
+
+/* Main title styling */
+.titleinfobusiness h1 {
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Bottom margin */
+  text-align: center; /* Center-aligns text */
+  position: relative; /* Relative for animation positioning */
+  font-family: "DM Serif Text", serif; /* Font style */
+  font-size: 40px; /* Font size */
+}
+
+/* Animated underline effect for the main title */
+.titleinfobusiness h1:after {
+  width: 100%; /* Full width underline */
+  height: 100%; /* Full height */
+  top: 50%; /* Position */
+  left: 0;
+  content: ""; /* No initial content */
+  line-height: 48px; /* Line height */
+  animation: abomination1 1.5s linear 1; /* Single animation */
+  animation-fill-mode: forwards; /* Keeps the last frame */
+}
+
+@keyframes abomination1 {
+  0% {
+    content: "W";
+  }
+  5% {
+    content: "WH";
+  }
+  10% {
+    content: "WHA";
+  }
+  15% {
+    content: "WHAT";
+  }
+  20% {
+    content: "WHAT ";
+  }
+  25% {
+    content: "WHAT I";
+  }
+  30% {
+    content: "WHAT IS";
+  }
+  35% {
+    content: "WHAT IS ";
+  }
+  40% {
+    content: "WHAT IS S";
+  }
+  45% {
+    content: "WHAT IS SI";
+  }
+  50% {
+    content: "WHAT IS SIM";
+  }
+  55% {
+    content: "WHAT IS SIMP";
+  }
+  60% {
+    content: "WHAT IS SIMPL";
+  }
+  70% {
+    content: "WHAT IS SIMPLY";
+  }
+  75% {
+    content: "WHAT IS SIMPLYA ";
+  }
+  80% {
+    content: "WHAT IS SIMPLYAT";
+  }
+  90% {
+    content: "WHAT IS SIMPLYATE";
+  }
+  100% {
+    content: "WHAT IS SIMPLYATE?";
+  }
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+  .infobusiness {
+    margin-top: 120px;
+    padding: 20px; /* Adds padding on smaller screens */
+  }
+  .infobusinessall {
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center;
+    gap: 20px; /* Reduces gap */
+  }
+  .infobusiness-right, .infobusiness-left {
+    text-align: center; /* Center-aligns text */
+  }
+  .image-infobusiness {
+    width: 100%;
+    max-width: 280px; /* Max width for image */
+    height: auto; /* Adjusts height automatically */
+  }
+  .infobusiness h2 {
+    font-size: 24px; /* Smaller font for smaller screens */
+  }
+  .infobusiness h3 {
+    width: 100%;
+    font-size: 18px; /* Adjusted font size */
+  }
+  .infobusiness p {
+    width: 100%;
+    font-size: 14px; /* Smaller font for readability */
+    text-align: justify; /* Justifies text */
+    text-align-last: center; /* Centers last line */
+  }
+  .titleinfobusiness h1 {
+    font-size: 26px;
+    transform: translateY(-40px); /* Adjusts position */
+  }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+  .infobusiness {
+    margin-top: 90px;
+    padding: 20px; /* Adds padding on tablets */
+  }
+  .infobusinessall {
+    padding: 0 20px;
+    align-items: center;
+    flex-direction: column; /* Stacks content vertically */
+    gap: 30px; /* Adjusted gap */
+  }
+  .infobusiness-right, .infobusiness-left {
+    text-align: center;
+  }
+  .image-infobusiness {
+    width: 400px; /* Adjusted width */
+    height: auto;
+  }
+  .infobusiness h2 {
+    margin: 20px 0; /* Vertical margin */
+  }
+  .infobusiness h3 {
+    width: 100%;
+    margin: 20px 0; /* Vertical margin */
+    font-size: 18px; /* Larger font */
+  }
+  .infobusiness p {
+    width: 100%;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1.6; /* Improved readability */
+  }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1023px) and (max-width: 1280px) {
+  .infobusinessall {
+    gap: 15px; /* Adjusted gap */
+  }
+  .image-infobusiness {
+    width: 400px;
+    height: 400px; /* Adjusted size */
+  }
+  .infobusiness h2 {
+    font-size: 30px; /* Larger font size */
+  }
+  .infobusiness h3 {
+    font-size: 18px; /* Adjusted font size */
+  }
+  .infobusiness p {
+    width: 500px; /* Width adjustment */
+    font-size: 15px; /* Smaller font for this screen size */
+  }
+  .titleinfobusiness h1 {
+    font-size: 36px; /* Larger font size */
+  }
+}
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1439px) and (max-width: 1920px) {
+  .infobusiness {
+    width: 100%; /* Full width */
+  }
+  .infobusinessall {
+    gap: 40px; /* Increased gap */
+  }
+  .image-infobusiness {
+    width: 600px;
+    height: 600px; /* Increased size */
+  }
+  .infobusiness h2 {
+    font-size: 40px; /* Larger font size */
+  }
+  .infobusiness h3 {
+    font-size: 24px; /* Larger font for subtitle */
+  }
+  .infobusiness p {
+    width: 600px; /* Width adjustment */
+    font-size: 18px; /* Increased font size */
+  }
+  .titleinfobusiness h1 {
+    font-size: 48px; /* Larger font size for title */
+  }
+}

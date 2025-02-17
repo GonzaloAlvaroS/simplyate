@@ -1,0 +1,67 @@
+.lineinfo {
+    width: 100%; /* The container occupies 100% of the available width */
+    min-height: 14.2vh; /* Sets the minimum height of the container to 14.2% of the viewport height */
+    background-color: black; /* Sets the background color of the container to black */
+    display: flex; /* Uses flexbox to align the items within the container */
+    align-items: center; /* Vertically centers the items within the container */
+    justify-content: center; /* Horizontally centers the items within the container */
+}
+
+.lineinfo-images {
+    display: flex; /* Uses flexbox to arrange the images in a row */
+    gap: 100px; /* Adds space of 100px between the images */
+    justify-content: center; /* Centers the images horizontally within the container */
+}
+
+.lineinfo-images img {
+    width: 70px; /* Sets the width of the images to 70px */
+    border-radius: 50%; /* Makes the images circular by applying a 50% border radius */
+}
+
+/* Responsive for Mobile Phones 320px - 430px - 600px */
+@media (max-width: 600px) {
+    .lineinfo-images {
+        display: grid; /* Changes layout to a grid for small screens */
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns in the grid */
+        gap: 20px; /* Reduces gap between images to 20px */
+        margin-top: 10px; /* Adds top margin to the grid */
+        margin-bottom: 10px; /* Adds bottom margin to the grid */
+    }
+    .lineinfo-images img {
+        width: 60px; /* Reduces image size to 60px for small screens */
+    }
+}
+
+/* Responsive for Tablets 768px - 940px */
+@media (min-width: 768px) and (max-width: 940px) {
+    .lineinfo{
+        min-height: 10vh;
+    }
+    .lineinfo-images {
+        grid-template-columns: repeat(3, 1fr); /* Maintains 3 equal columns in the grid */
+        gap: 25px; /* Sets gap between images to 50px */
+    }
+    .lineinfo-images img {
+        width: 75px; /* Adjusts image size to 75px for tablets */
+    }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .lineinfo {
+        min-height: 16vh; /* Increases the minimum height of the container to 16% of the viewport height */
+    }
+    .lineinfo-images {
+        gap: 80px; /* Sets gap between images to 80px */
+    }
+    .lineinfo-images img {
+        width: 75px; /* Maintains image size at 75px for these screens */
+    }
+}
+
+/* Responsive for PC Screens 1440px - 1920px */
+@media (min-width: 1439px) and (max-width: 1920px) {
+    .lineinfo-images img {
+        width: 100px; /* Increases image size to 100px for larger screens */
+    }
+}

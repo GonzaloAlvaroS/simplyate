@@ -1,0 +1,81 @@
+/* Center all text in the gallery */
+.gallery {
+    text-align: center;
+}
+
+/* Style the main title */
+.gallery h1 {
+    font-family: "DM Serif Text", serif; /* Serif font for elegance */
+}
+
+/* Style the subtitle */
+.gallery h2 {
+    color: #d39000; /* Gold-like color */
+    font-family: "Lora", serif; /* Custom serif font */
+    font-size: 18px; /* Font size */
+}
+
+/* Define the container for gallery items */
+.gallery-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Default direction is row */
+    flex-wrap: wrap; /* Allow wrapping to the next row */
+    justify-content: center; /* Center all items */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically */
+    margin-top: 20px; /* Add space above the container */
+}
+
+/* Style each gallery item */
+.gallery-container div {
+    width: 20%; /* Default width for each item */
+    margin: 0.5%; /* Add spacing between items */
+    padding: 1%; /* Add internal padding */
+}
+
+/* Make all images within items responsive */
+.gallery-container div img {
+    width: 100%; /* Image fills the container */
+    height: auto;
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+    /* Stack items vertically */
+    .gallery-container {
+        flex-direction: column; /* Change direction to column */
+    }
+    /* Set each item to occupy full width */
+    .gallery-container div {
+        width: 90%; /* Almost full width */
+        margin: 5px auto; /* Center items with vertical margin */
+    }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+    /* Adjust layout to three items per row */
+    .gallery-container div {
+        width: 30%; /* Each item takes 30% of the row */
+    }
+
+    /* Adjust font sizes for tablets */
+    .gallery h1 {
+        font-size: 28px; /* Slightly larger title size */
+    }
+    .gallery h2 {
+        font-size: 18px; /* Keep subtitle size reasonable */
+    }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    /* Maintain four items per row */
+    .gallery-container div {
+        width: 22%; /* Adjust width for balance */
+    }
+}
+
+/* Already Responsive for PC Screens 1440px - 1920px */
+

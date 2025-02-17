@@ -1,0 +1,181 @@
+/* Container for the "explanation" section with top margin */
+.explanation {
+  margin-top: 130px; /* Adds space above the section */
+  display: block; /* Block display for full-width layout */
+  align-items: center; /* Centers items vertically (non-functional here, as display is block) */
+  justify-content: space-between; /* Space between elements (non-functional in block display) */
+}
+
+/* Paragraph styling within "explanation" with max width and centered alignment */
+.explanation p {
+  max-width: 700px; /* Limits width for readability */
+  margin: auto; /* Centers the paragraph horizontally */
+  text-align: justify; /* Justifies text alignment */
+  text-align-last: center; /* Center-aligns the last line */
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Title section styling for "explanation-title" with centered layout */
+.explanation-title {
+  width: 100%; /* Full width of the container */
+  margin-bottom: 40px; /* Bottom margin for spacing */
+  position: relative; /* Enables positioning of child elements */
+  display: flex; /* Flex display for alignment */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+}
+
+/* Heading styling within "explanation-title" */
+.explanation-title h1 {
+  width: 100%; /* Full width of the container */
+  margin-bottom: 30px; /* Bottom margin for spacing */
+  text-align: center; /* Centers text horizontally */
+  position: relative; /* Enables positioning of pseudo-elements */
+  font-family: "DM Serif Text", serif; /* Serif font style */
+  font-size: 40px; /* Font size for heading */
+}
+
+/* Animation effect on heading using a pseudo-element */
+.explanation-title h1:after {
+  width: 100%; /* Full width of the heading */
+  height: 100%; /* Full height of the heading */
+  top: 50%; /* Positions pseudo-element vertically centered */
+  left: 0; /* Aligns pseudo-element to the left */
+  content: ""; /* Empty content for styling purposes */
+  line-height: 48px; /* Line height for visual alignment */
+  animation: abomination2 1.5s linear 1; /* Animation effect with linear timing */
+  animation-fill-mode: forwards; /* Keeps the animation state after it completes */
+}
+  
+@keyframes abomination2 {
+    0% {
+      content: "↗";
+    }
+    5% {
+      content: "↗ ";
+    }
+    10% {
+      content: "↗ T";
+    }
+    15% {
+      content: "↗ TH";
+    }
+    20% {
+      content: "↗ THE";
+    }
+    25% {
+      content: "↗ THE ";
+    }
+    30% {
+      content: "↗ THE F";
+    }
+    35% {
+      content: "↗ THE FO";
+    }
+    40% {
+      content: "↗ THE FOR";
+    }
+    45% {
+      content: "↗ THE FORM";
+    }
+    50% {
+      content: "↗ THE FORMU";
+    }
+    55% {
+      content: "↗ THE FORMUL";
+    }
+    60% {
+      content: "↗ THE FORMULA";
+    }
+    65% {
+      content: "↗ THE FORMULA ";
+    }
+    70% {
+      content: "↗ THE FORMULA F";
+    }
+    75% {
+      content: "↗ THE FORMULA FO";
+    }
+    80% {
+      content: "↗ THE FORMULA FOR";
+    }
+    82% {
+      content: "↗ THE FORMULA FOR ";
+    }
+    84% {
+      content: "↗ THE FORMULA FOR S";
+    }
+    86% {
+      content: "↗ THE FORMULA FOR SU";
+    }
+    88% {
+      content: "↗ THE FORMULA FOR SUC";
+    }
+    90% {
+      content: "↗ THE FORMULA FOR SUCC";
+    }
+    92% {
+      content: "↗ THE FORMULA FOR SUCCE";
+    }
+    94% {
+      content: "↗ THE FORMULA FOR SUCCES";
+    }
+    96% {
+      content: "↗ THE FORMULA FOR SUCCESS";
+    }
+    98% {
+      content: "↗ THE FORMULA FOR SUCCESS ";
+    }
+    100% {
+        content: "↗ THE FORMULA FOR SUCCESS ↗";
+    }
+}
+
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+  .explanation {
+      margin-top: 200px; /* Increases top margin for mobile layout */
+      padding: 20px; /* Adds padding for smaller screens */
+  }
+  .explanation p {
+      max-width: 100%; /* Full-width paragraph on mobile */
+      font-size: 14px; /* Smaller font size for readability */
+  }
+  .explanation-title {
+      margin: 0; /* Removes default margin */
+      transform: translateY(-110px); /* Moves title upward */
+  }
+  .explanation-title h1 {
+      margin: 0; /* Removes margin for compact layout */
+      font-size: 30px; /* Reduces font size for smaller screens */
+  }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+  .explanation {
+      margin-top: 160px; /* Adjusts top margin for tablets */
+  }
+  .explanation p {
+      width: 100%; /* Full-width for readability */
+      margin-left: auto; /* Centers paragraph */
+      margin-right: auto;
+      margin-top: 10px; /* Adds top margin for spacing */
+      font-size: 16px; /* Larger font size for tablets */
+      text-align-last: center; /* Center-aligns last line */
+  }
+  .explanation-title {
+      margin: 0; /* Removes default margin */
+      transform: translateY(-50px); /* Moves title upward slightly */
+  }
+  .explanation-title h1 {
+      margin: 0; /* Removes margin */
+      font-size: 35px; /* Adjusts font size for tablets */
+  }
+}
+
+/* Already Responsive for PC Screens 1024px - 1280px */
+
+/* Already Responsive for PC Screens 1440px - 1920px */

@@ -1,0 +1,94 @@
+.service1 {
+    width: 100%; /* The container occupies the full width of its parent */
+    max-width: 1200px; /* Sets a maximum width to ensure it doesn’t stretch too wide on larger screens */
+    margin: 58px auto; /* Centers the container with a top margin of 58px */
+    padding: 0 60px; /* Adds horizontal padding of 60px on each side */
+    display: flex; /* Uses flexbox to arrange child elements in a row */
+    align-items: center; /* Vertically centers the child elements */
+    justify-content: center; /* Horizontally centers the child elements */
+}
+
+.service1-left {
+    flex-basis: 50%; /* Sets the left section to occupy 50% of the available width */
+}
+
+.service1-right {
+    flex-basis: 40%; /* Sets the right section to occupy 40% of the available width */
+}
+
+.service1 h2 {
+    margin: 10px 0; /* Adds vertical margin of 10px */
+    color: #000000; /* Sets the heading color to black */
+    font-size: 35px; /* Sets font size for the heading */
+    font-family: "DM Serif Text", serif; /* Applies the 'DM Serif Text' font */
+}
+
+.service1 h3 {
+    color: #d39000; /* Sets the color to a golden yellow */
+    font-weight: 600; /* Makes the font weight slightly bold */
+    font-family: "Lora", serif; /* Applies the 'Lora' font */
+}
+
+.service1 p {
+    width: 100%; /* The paragraph takes the full width of its container */
+    max-width: 450px; /* Limits the width to 450px */
+    margin-bottom: 15px; /* Adds bottom margin to separate paragraphs */
+    color: #1b1b1b; /* Sets the paragraph color to a dark shade */
+    text-align: justify; /* Justifies the paragraph text for even spacing */
+}
+
+.image-service {
+    width: 100%; /* The image takes the full width of its container */
+    max-width: 450px; /* Limits the image width to 450px */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 10px; /* Rounds the corners of the image */
+}
+
+/* Responsive for Mobile Phones 320px - 430px */
+@media (max-width: 430px) {
+    .service1 {
+        flex-direction: column; /* Stacks elements vertically on small screens */
+        margin-bottom: 30px;
+    }
+    .service1-left, .service1-right {
+        margin-bottom: 10px; /* Adds bottom margin for spacing */
+        text-align: center; /* Centers text horizontally */
+        text-align-last: center; /* Centers the last line of text */
+    }
+    .service1 h2 {
+        font-size: 30px; /* Reduces the heading font size for small screens */
+    }
+}
+
+/* Responsive for Tablets 600px - 940px */
+@media (min-width: 600px) and (max-width: 940px) {
+    .service1 {
+        flex-direction: column; /* Stacks elements vertically on tablet screens */
+        margin-bottom: 30px;
+    }
+    .service1-left, .service1-right {
+        margin-bottom: 10px; /* Adds bottom margin for spacing */
+        text-align: center; /* Centers text horizontally */
+        text-align-last: center; /* Centers the last line of text */
+    }
+    .service1 h2 {
+        font-size: 32px; /* Reduces the heading font size slightly */
+    }
+}
+
+/* Responsive for PC Screens 1024px - 1280px */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .service1 h2 {
+        font-size: 32px; /* Adjusts the heading font size */
+    }
+    .service1 p {
+        width: 90%; /* Adjusts paragraph width to 90% for better readability */
+        max-width: 600px; /* Limits paragraph width to 600px */
+    }
+    .image-service {
+        width: 400px; /* Adjusts image width for better fit */
+        height: auto; /* Maintains the image's aspect ratio */
+    }
+}
+
+/* Already Responsive for PC Screens 1440px - 1920px */
